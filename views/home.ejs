@@ -11,21 +11,22 @@
   <style>
       .yellow{
         background-color: yellow;
+        color: red;
+      }
+      .red{
+        background-color: red;
+        color: yellow;
       }
   </style>
   <body>
     <!-- div co id="root" dung de hung ket qua cua react tra ve -->
     <div id="root"> </div>
+    <hr>
+    <!-- <div id="root1"> </div> -->
 
     <!-- trong script luon luon phai co type="text/babel" -->
-    <script type="text/babel">
-    // ReactDOM.render() la render cai gi va o dau?
-    ReactDOM.render(
-      <div>
-        <h1 className="yellow"> Anh Phan - Dinh Vu </h1>
-        <h1> Anh Phan - Dinh Van </h1>
-      </div>
-      , document.getElementById("root"));
+    <script src="handle.js" type="text/babel">
+
     </script>
   </body>
 </html>
