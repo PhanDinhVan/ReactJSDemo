@@ -3,16 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Demo ReactJS</title>
+    <!-- 3 thang nay luon luon phai co -->
     <script crossorigin src="lib/react.development.js"></script>
     <script crossorigin src="lib/react-dom.development.js"></script>
     <script crossorigin src="lib/browser.min.js"></script>
   </head>
+  <style>
+      .yellow{
+        background-color: yellow;
+      }
+  </style>
   <body>
     <!-- div co id="root" dung de hung ket qua cua react tra ve -->
     <div id="root"> </div>
+
+    <!-- trong script luon luon phai co type="text/babel" -->
     <script type="text/babel">
     // ReactDOM.render() la render cai gi va o dau?
-      ReactDOM.render(<h1> Anh Phan </h1>, document.getElementById("root"));
+    ReactDOM.render(
+      <div>
+        <h1 className="yellow"> Anh Phan - Dinh Vu </h1>
+        <h1> Anh Phan - Dinh Van </h1>
+      </div>
+      , document.getElementById("root"));
     </script>
   </body>
 </html>
